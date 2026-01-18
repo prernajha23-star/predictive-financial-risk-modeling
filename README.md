@@ -17,10 +17,21 @@ fail to capture complex, non-linear risk patterns.
 - Demonstrated robustness across different validation splits
 
 ## Business Impact
-The model supports:
-- Data-driven credit approval decisions
-- Improved portfolio risk assessment
-- Early identification of high-risk firms
+
+This model can be used by financial institutions to:
+- Flag high-risk firms earlier for credit review
+- Reduce default exposure through probabilistic risk scoring
+- Support portfolio-level stress testing and capital allocation
+
+The ensemble approach prioritizes stability and generalization over single-model optimization, making it suitable for real-world deployment scenarios.
+
+## Limitations & Future Work
+
+- Model performance may vary under distribution shift
+- No temporal validation due to dataset constraints
+- SHAP-based interpretability and calibration curves are planned
+- Future versions may include monotonic constraints and cost-sensitive optimization
+
 
 ## Tools Used
 Python | Pandas | Scikit-learn | LightGBM | XGBoost
